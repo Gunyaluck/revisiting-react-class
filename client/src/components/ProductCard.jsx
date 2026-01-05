@@ -16,12 +16,12 @@ function ProductCard(props) {
           
       */}
       <img
-        src="https://picsum.photos/id/231/200/200"
-        alt="The Lorem Ipsum for photos."
+        src={props.imgSrc}
+        alt={props.productName}
         className="w-full mb-2"
       />
       <h3 className="text-lg font-semibold mb-1">
-        The Lorem Ipsum for photos.
+        {props.title}
       </h3>
       <div className="flex justify-between items-center">
         <p className="text-gray-600">$99.99</p>
